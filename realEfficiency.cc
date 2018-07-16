@@ -1161,15 +1161,15 @@ int main()
     std::string process;
     char sourceFileList[500];
     
-    process = "@process@";
-    sprintf(sourceFileList, "@source@");
+    //process = "@process@";
+    //sprintf(sourceFileList, "@source@");
     
-    //process = "SingleMuon_Run2017C-ZMu-PromptReco-v3_RAW-RECO";
-    //process = "MET_Run2017C-v1_RAW";
+    process = "SingleMuon_Run2017C-ZMu-PromptReco-v3_RAW-RECO";
+    process = "MET_Run2017C-v1_RAW";
     
-    //sprintf(sourceFileList, "sourceFiles/%s/%s.txt", process.c_str(), process.c_str());
+    sprintf(sourceFileList, "sourceFiles/%s/%s.txt", process.c_str(), process.c_str());
     
-    printf("Source file list: %s \n", sourceFileList);
+    //printf("Source file list: %s \n", sourceFileList);
     
     // Read phiB vs. pT
     Common::parseCSV_pTlut("ptb12h_Feb2016.lut", &v_phiB_MB1, &v_pT_MB1);
