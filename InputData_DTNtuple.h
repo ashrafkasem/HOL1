@@ -83,12 +83,19 @@ namespace InputData_DTNtuple
         
         std::vector <double> *v_Mu_isMuGlobal;
         std::vector <double> *v_Mu_isMuTracker;
+        std::vector <double> *v_Mu_isMuLoose;
+        std::vector <double> *v_Mu_isMuMedium;
         std::vector <double> *v_Mu_isMuTight;
+        std::vector <double> *v_Mu_charge;
         std::vector <double> *v_Mu_px;
         std::vector <double> *v_Mu_py;
         std::vector <double> *v_Mu_pz;
         std::vector <double> *v_Mu_phi;
         std::vector <double> *v_Mu_eta;
+        std::vector <double> *v_Mu_phiMB1;
+        std::vector <double> *v_Mu_etaMB1;
+        std::vector <double> *v_Mu_phiMB2;
+        std::vector <double> *v_Mu_etaMB2;
         
         
         std::vector <double> *v_bmtf_pT;
@@ -174,12 +181,19 @@ namespace InputData_DTNtuple
             
             v_Mu_isMuGlobal = 0;
             v_Mu_isMuTracker = 0;
+            v_Mu_isMuLoose = 0;
+            v_Mu_isMuMedium = 0;
             v_Mu_isMuTight = 0;
+            v_Mu_charge = 0;
             v_Mu_px = 0;
             v_Mu_py = 0;
             v_Mu_pz = 0;
             v_Mu_phi = 0;
             v_Mu_eta = 0;
+            v_Mu_phiMB1 = 0;
+            v_Mu_etaMB1 = 0;
+            v_Mu_phiMB2 = 0;
+            v_Mu_etaMB2 = 0;
             
             
             v_bmtf_pT = 0;
@@ -260,12 +274,19 @@ namespace InputData_DTNtuple
             
             tree->SetBranchAddress("Mu_isMuGlobal", &v_Mu_isMuGlobal);
             tree->SetBranchAddress("Mu_isMuTracker", &v_Mu_isMuTracker);
+            tree->SetBranchAddress("Mu_isMuLoose", &v_Mu_isMuLoose);
+            tree->SetBranchAddress("Mu_isMuMedium", &v_Mu_isMuMedium);
             tree->SetBranchAddress("Mu_isMuTight", &v_Mu_isMuTight);
+            tree->SetBranchAddress("Mu_charge", &v_Mu_charge);
             tree->SetBranchAddress("Mu_px", &v_Mu_px);
             tree->SetBranchAddress("Mu_py", &v_Mu_py);
             tree->SetBranchAddress("Mu_pz", &v_Mu_pz);
             tree->SetBranchAddress("Mu_phi", &v_Mu_phi);
             tree->SetBranchAddress("Mu_eta", &v_Mu_eta);
+            tree->SetBranchAddress("Mu_phiMB1", &v_Mu_phiMB1);
+            tree->SetBranchAddress("Mu_etaMB1", &v_Mu_etaMB1);
+            tree->SetBranchAddress("Mu_phiMB2", &v_Mu_phiMB2);
+            tree->SetBranchAddress("Mu_etaMB2", &v_Mu_etaMB2);
             
             
             tree->SetBranchAddress("bmtfPt", &v_bmtf_pT);
